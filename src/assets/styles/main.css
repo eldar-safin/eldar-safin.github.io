@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+@theme {
+    --font-display: "IBM Plex Serif", "sans-serif";
+}
+
+body {
+    @apply size-full bg-gradient-to-b from-red-700 to-red-800;
+}
+
+.container {
+    @apply flex items-center justify-center min-h-screen mx-auto px-6 py-12;
+}
+
+.block {
+    @apply isolate flex flex-col gap-y-4 lg:gap-y-8;
+}
+
+.quote {
+    @apply lg:relative;
+}
+
+.quote__text {
+    @apply max-w-4xl text-2xl md:text-4xl lg:text-5xl font-semibold md:font-bold italic text-center text-balance text-stone-50 tracking-tight cursor-default select-none;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.quote__left-icon, .quote__right-icon {
+    @apply absolute;
+}
+
+.quote__left-icon {
+    @apply top-2 lg:-top-5 start-2 lg:-start-14;
+}
+
+.quote__right-icon {
+    @apply bottom-2 lg:-bottom-5 end-2 lg:-end-14;
+}
+
+.quote__left-icon svg, .quote__right-icon svg {
+    @apply size-16 text-stone-50 opacity-30;
+}
+
+.quote__right-icon svg {
+    @apply rotate-180;
+}
+
+.author {
+    @apply flex items-center justify-center gap-x-2 md:gap-x-4;
+}
+
+.author__avatar {
+    @apply shrink-0;
+}
+
+.author__avatar img {
+    @apply size-10 rounded-full shadow-md;
+}
+
+.author__details {
+    @apply leading-none md:leading-tight text-pretty;
+}
+
+.author__details__name {
+    @apply block font-medium text-stone-200 hover:text-stone-950 transition-colors;
+}
+
+.author__details__description {
+    @apply text-sm text-stone-300 select-none;
+}
+
+/* Transitions */
+
+.quote__text, .quote__left-icon, .quote__right-icon {
+    @apply transition-all duration-300;
+}
