@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eldar-S.Online</title>
+
+  <!-- Page loading -->
+  <style type="text/css">#loader{position:absolute;top:0;right:0;bottom:0;left:0;z-index:100;width:100%;height:100%;background:#b91c1c;background:linear-gradient(180deg,#b91c1c 0,#991b1b 100%)}.quote__text{color:#fafaf9}.author__details__name{color:#e7e5e4}</style>
+  <script>document.addEventListener("DOMContentLoaded", d => { console.debug("DOMContentLoaded"), setTimeout(() => { document.getElementById("loader").classList.add("hidden") }, 300) });</script>
+  <!-- Page loading -->
+
+</head>
+
+<body>
+  <div id="loader"></div>
+  <div id="wrapper">
+    <div class="container">
+      <div class="block">
+        <div class="quote">
+          <h1 class="quote__text">
+            Интернет — это&nbsp;телефонная&nbsp;система, которая вконец обнаглела
+          </h1>
+          <div class="quote__left-icon">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <use xlink:href="#quote-icon" />
+            </svg>
+          </div>
+          <div class="quote__right-icon">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <use xlink:href="#quote-icon" />
+            </svg>
+          </div>
+        </div>
+        <div class="author">
+          <div class="author__avatar">
+            <img alt="Clifford Stoll avatar" src="/src/assets/images/CliffordStoll.jpg">
+          </div>
+          <div class="author__details">
+            <div>
+              <a class="author__details__name" target="_blank" href="https://citaty.info/man/klifford-stoll">Клиффорд
+                Столл</a>
+            </div>
+            <div>
+              <span class="author__details__description">астроном</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden">
+    <svg class="hidden" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"
+      xmlns="http://www.w3.org/2000/svg">
+      <symbol id="quote-icon">
+        <path fill="currentColor"
+          d="M7.398 10.3c0 .773-.25 1.4-.747 1.88-.497.453-1.125.68-1.885.68-.916 0-1.676-.307-2.278-.92-.576-.613-.864-1.493-.864-2.64 0-1.227.34-2.427 1.021-3.6.707-1.2 1.69-2.147 2.946-2.84l.903 1.4c-.68.48-1.23 1.013-1.65 1.6-.392.587-.654 1.267-.785 2.04.236-.107.51-.16.825-.16.733 0 1.335.24 1.807.72.471.48.707 1.093.707 1.84Zm7.226 0c0 .773-.248 1.4-.746 1.88-.498.453-1.126.68-1.885.68-.917 0-1.676-.307-2.278-.92-.576-.613-.864-1.493-.864-2.64 0-1.227.34-2.427 1.02-3.6.708-1.2 1.69-2.147 2.947-2.84l.903 1.4c-.68.48-1.23 1.013-1.65 1.6-.392.587-.654 1.267-.785 2.04.236-.107.51-.16.825-.16.733 0 1.335.24 1.806.72.472.48.707 1.093.707 1.84Z" />
+      </symbol>
+    </svg>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
